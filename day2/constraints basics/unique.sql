@@ -1,0 +1,1 @@
+email varchar(50) UNIQUE 

@@ -1,0 +1,1 @@
+ALTER Table student ADD email varchar(100) NOT NULL

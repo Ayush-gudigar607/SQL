@@ -13,3 +13,8 @@ ON CONFLICT(email) DO NOTHING;
 --insert ignore will check the Primary key or Unique Key violations before committing the data.
 INSERT IGNORE INTO employees(id,name,email,salary)
 VALUES(101,'John Doe','rahul@gmail.com',45000);
+
+--using the duplicate key
+INSERT INTO employees(id,name,email,salary)
+VALUES(101,'John Doe','rahul@gmail.com',45000)
+ON DUPLICATE KEY UPDATE email=email;

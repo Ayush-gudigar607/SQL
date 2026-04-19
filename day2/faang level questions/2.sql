@@ -3,7 +3,7 @@ INSERT INTO employees(id,name,email,salary)
 SELECT 101,'John Doe','rahul@gmail.com',45000
 WHERE NOT EXISTS (SELECT 1 FROM employees WHERE email='rahul@gmail.com');
 
---option 1
+--option 1(THIS WILL BE THE BEST ONE)
 INSERT INTO employees(id,name,email,salary)
 VALUES(101,'John Doe','rahul@gmail.com',45000)
 --THIS KNOWN AS UPSERT OPERATION WHERE UPDATE AND INSERT WILL TAKES PLACE 

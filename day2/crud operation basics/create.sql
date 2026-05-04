@@ -1,3 +1,6 @@
+
+-- CREATE the table of student
+
 CREATE Table student(
     id int PRIMARY KEY,
     name varchar(50),
@@ -5,6 +8,7 @@ CREATE Table student(
     city VARCHAR(50)
 )
 
+-- Insert the student details
 INSERT INTO student(id,name,age,city) VALUES(1,'John',20,'New York');
 INSERT INTO student(id,name,age,city) VALUES(2,'Alice',22,'Los Angeles');
 INSERT INTO student(id,name,age,city) VALUES(3,'Bob',19,'Chicago');
